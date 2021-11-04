@@ -7,11 +7,15 @@ import Thumbnail from "../components/Thumbnail";
 
 function DashboardScreen() {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <MainNavBar />
-      <DashboardNavbar />
-      <Thumbnail />
-      <Table />
+      <div className="flex">
+        <DashboardNavbar />
+        <div className="flex flex-col">
+          <Thumbnail />
+          <Table />
+        </div>
+      </div>
     </div>
   );
 }

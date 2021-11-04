@@ -1,7 +1,7 @@
 import React from "react";
 
 function Thumbnail() {
-  return <div></div>;
+  return <div>thumbnail</div>;
 }
 
 export default Thumbnail;

@@ -6,8 +6,8 @@ import faker from "faker";
 
 function MainNavBar() {
   return (
-    <div className="container bg-white border-b border-gray-200 ">
-      <nav className="flex items-center justify-between py-3 px-6">
+    <div className="flex items-center bg-white border-b border-gray-200 h-16">
+      <nav className="flex items-center justify-between py-3 px-6 w-full">
         <div className="flex xs:flex-col md:flex-row justify-around items-center">
           <FontAwesomeIcon
             className="text-gray-400 mr-8 cursor-pointer"
