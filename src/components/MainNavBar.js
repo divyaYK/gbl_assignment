@@ -14,7 +14,7 @@ function MainNavBar() {
             icon={faBars}
           />
           <a
-            href=""
+            href="/"
             className="text-3xl font-bold font-sans uppercase text-blue-600"
           >
             shahi
@@ -28,7 +28,7 @@ function MainNavBar() {
           <div className="cursor-pointer flex items-center ml-5 pl-5 border-l border-gray-300">
             <img
               src={faker.image.avatar()}
-              alt="Profile Picture"
+              alt={faker.name.firstName()}
               className="rounded-full object-fit object-cover mr-1 h-7"
             />
             <FontAwesomeIcon icon={faCaretDown} className="text-gray-400" />
