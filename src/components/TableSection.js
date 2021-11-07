@@ -16,7 +16,7 @@ function TableSection() {
   const inactiveClasses = " text-gray-400";
 
   return (
-    <div className="flex flex-col items-center bg-white mx-6 shadow-lg">
+    <div className="flex flex-col items-center bg-white mx-6 shadow-lg overflow-auto mb-6">
       <div className="flex items-center justify-between w-full px-3 border-b broder-gray-200">
         <div className="flex items-center">
           <div

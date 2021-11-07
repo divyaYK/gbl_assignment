@@ -6,7 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      xs: "480px",
+      xs: "200px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -65,6 +65,7 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      120: "75rem",
     },
     animation: {
       none: "none",
@@ -446,6 +447,7 @@ module.exports = {
       "5/6": "83.333333%",
       full: "100%",
       screen: "100vh",
+      remaining: "calc(100vh - 4rem)",
     }),
     inset: (theme, { negative }) => ({
       auto: "auto",

@@ -11,7 +11,7 @@ function DashboardScreen() {
       <MainNavBar />
       <div className="flex">
         <DashboardNavbar />
-        <div className="flex flex-col flex-grow">
+        <div className="flex flex-col xs:justify-between md:justify-evenly overflow-x-hidden">
           <Thumbnails />
           <TableSection />
         </div>

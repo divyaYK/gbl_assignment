@@ -11,8 +11,8 @@ import {
 function DashboardNavbar() {
   return (
     <div
-      className="flex flex-col items-center w-14 bg-blue-600 text-gray-300"
-      style={{ height: "calc(100vh - 4rem)" }}
+      className="flex xs:absolute xs:-bottom-1/2 xs:w-full md:relative md:bottom-auto  md:flex-col items-center md:w-14 bg-blue-600 text-gray-300 md:h-remaining"
+      // style={{ height: "calc(100vh - 4rem)" }}
     >
       <div className="p-3 w-full text-center cursor-pointer text-white bg-blue-500 border-l-4 border-white">
         <FontAwesomeIcon icon={faHome} className="" />

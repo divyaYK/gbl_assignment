@@ -6,9 +6,9 @@ import faker from "faker";
 
 function MainNavBar() {
   return (
-    <div className="flex items-center bg-white border-b border-gray-200 h-16">
+    <div className="flex items-center bg-white border-b border-gray-200 h-16 w-full">
       <nav className="flex items-center justify-between py-3 px-6 w-full">
-        <div className="flex xs:flex-col md:flex-row justify-around items-center">
+        <div className="flex xs:justify-between xs:flex-grow md:flex-grow-0 md:justify-around items-center">
           <FontAwesomeIcon
             className="text-gray-400 mr-8 cursor-pointer"
             icon={faBars}
@@ -20,7 +20,7 @@ function MainNavBar() {
             shahi
           </a>
         </div>
-        <div className="flex xs:flex-col md:flex-row items-center w-1/6 justify-center">
+        <div className="xs:hidden md:flex md:flex-row items-center w-1/6 justify-center">
           <FontAwesomeIcon
             icon={faCog}
             className="text-gray-400 cursor-pointer"

@@ -53,7 +53,7 @@ function Table({ tableType }) {
       <tr
         key={caseObject.id}
         className={
-          `grid grid-cols-12 p-2` +
+          `grid grid-cols-12 grid-flow-col p-2` +
           (Boolean(index % 2) ? " bgwhite" : " bg-gray-100")
         }
       >
@@ -112,49 +112,51 @@ function Table({ tableType }) {
   });
 
   let finalRenderString = (
-    <table className="w-full overflow-auto">
-      <thead>
-        <tr className="grid grid-cols-12 text-gray-400 border-b border-gray-200 p-2">
-          <td className="text-center font-sans text-xs  uppercase">
-            case no. <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            Branch <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            reporting method <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            date <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            time <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            category <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            subcategory <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            priority <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            nature <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            case manager <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            case reporter <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-          <td className="text-center font-sans text-xs  uppercase">
-            status <FontAwesomeIcon icon={faCaretDown} />
-          </td>
-        </tr>
-      </thead>
-      <tbody>{tableRows}</tbody>
-    </table>
+    <div className="container">
+      <table className="xs:w-120 lg:w-auto">
+        <thead>
+          <tr className="grid grid-cols-12 grid-flow-col text-gray-400 border-b border-gray-200 p-2">
+            <td className="text-center font-sans text-xs  uppercase">
+              case no. <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              Branch <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              reporting method <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              date <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              time <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              category <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              subcategory <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              priority <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              nature <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              case manager <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              case reporter <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+            <td className="text-center font-sans text-xs  uppercase">
+              status <FontAwesomeIcon icon={faCaretDown} />
+            </td>
+          </tr>
+        </thead>
+        <tbody>{tableRows}</tbody>
+      </table>
+    </div>
   );
 
   return finalRenderString;

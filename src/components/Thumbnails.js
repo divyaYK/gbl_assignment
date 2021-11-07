@@ -6,7 +6,7 @@ import Thumbnail from "./Thumbnail";
 
 function Thumbnails() {
   return (
-    <div className="flex items-center justify-around h-3/6 py-8 px-3">
+    <div className="flex xs:flex-col md:flex-row md:flex-wrap items-center justify-around h-3/6 py-8 px-3 relative xs:top-12 md:top-1">
       <Thumbnail
         faIcon={faFileMedical}
         colorUsed={"green"}

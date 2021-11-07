@@ -3,7 +3,6 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from . import newCases
 from .models import Case, Status
 from .serializers import CaseSerializer
 
