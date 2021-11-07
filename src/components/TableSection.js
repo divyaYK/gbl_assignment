@@ -45,7 +45,7 @@ function TableSection() {
           </button>
         </div>
       </div>
-      <Table tableNumber={toggleState} />
+      <Table tableType={toggleState === 1 ? "new" : "old"} />
     </div>
   );
 }
