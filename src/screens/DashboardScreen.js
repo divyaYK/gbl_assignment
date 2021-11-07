@@ -2,7 +2,7 @@ import React from "react";
 
 import MainNavBar from "../components/MainNavBar";
 import DashboardNavbar from "../components/DashboardNavbar";
-import Table from "../components/Table";
+import TableSection from "../components/TableSection";
 import Thumbnails from "../components/Thumbnails";
 
 function DashboardScreen() {
@@ -13,7 +13,7 @@ function DashboardScreen() {
         <DashboardNavbar />
         <div className="flex flex-col flex-grow">
           <Thumbnails />
-          <Table />
+          <TableSection />
         </div>
       </div>
     </div>

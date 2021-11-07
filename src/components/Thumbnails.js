@@ -1,6 +1,5 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileMedical } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeOpen, faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import Thumbnail from "./Thumbnail";
