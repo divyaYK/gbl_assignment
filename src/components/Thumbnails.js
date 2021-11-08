@@ -12,18 +12,21 @@ function Thumbnails() {
         colorUsed={"green"}
         shadowColor={"rgba(34, 197, 94, 0.3)"}
         buttonText={"Case Upload"}
+        funcDisable={false}
       />
       <Thumbnail
         faIcon={faFileAlt}
         colorUsed={"blue"}
         shadowColor={"rgba(59, 130, 246, 0.3)"}
         buttonText={"Generate Report"}
+        funcDisable={true}
       />
       <Thumbnail
         faIcon={faEnvelopeOpen}
         colorUsed={"orange"}
         shadowColor={"rgba(249, 115, 22, 0.3)"}
         buttonText={"Broadcast Message"}
+        funcDisable={true}
       />
     </div>
   );

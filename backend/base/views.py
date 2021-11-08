@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -34,3 +35,12 @@ def getOldCases(request):
     case_data = case_data.filter(status_id=status)
     serializer = CaseSerializer(case_data, many=True)
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def createNewCases(request):
+    serializer = CaseSerializer(Case, data=request.data, many=True)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
