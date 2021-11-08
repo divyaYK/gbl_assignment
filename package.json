@@ -22,7 +22,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "npm-run-all --parallel react-start watch:css",
+    "start": "npm-run-all --parallel react-start watch:css runserver",
     "build": "npm-run-all --parallel react-build watch:css",
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
